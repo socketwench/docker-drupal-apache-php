@@ -24,7 +24,7 @@ RUN \
     php5-mcrypt php5-curl php5-gd php5-sqlite php5-common php-apc \
     php-pear php5-json php5-memcache php5-xdebug php5-intl \
     mysql-client supervisor \
-    apache2-mpm-worker libapache2-mod-fastcgi && \
+    apache2-mpm-worker libapache2-mod-fastcgi apache2-utils && \
     # Cleanup
     DEBIAN_FRONTEND=noninteractive apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
